@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="timer">
+      <h1 class="title">Timer</h1>
+      <div class="plus-buttons hidden">
+        <button class="arrow-button" onclick="addHour()"><img src="./img/arrow-up-solid.svg" alt="arrow up" class="arrow-up"></button>
+        <button class="arrow-button" onclick="addMinute()"><img src="./img/arrow-up-solid.svg" alt="arrow up" class="arrow-up"></button>
+        <button class="arrow-button" onclick="addSeconds()"><img src="./img/arrow-up-solid.svg" alt="arrow up" class="arrow-up"></button>
+      </div>
+        <h1 class="time"></h1>
+      <div class="minus-buttons hidden">  
+        <button class="arrow-button" onclick="subtractHour()"><img src="./img/arrow-down-solid.svg" alt="arrow down" class="arrow-down"></button>
+        <button class="arrow-button" onclick="subtractMinute()"><img src="./img/arrow-down-solid.svg" alt="arrow down" class="arrow-down"></button>
+        <button class="arrow-button" onclick="subtractSeconds()"><img src="./img/arrow-down-solid.svg" alt="arrow down" class="arrow-down"></button>
+      </div>
+      <button class="startButton" onclick="startTimer()">Start</button>
+      <button class="stopButton" onclick="stopTimer()">Stop</button>
+      <button onclick="reset()">Reset</button>
+      <button class="config-button" onclick="toggleConfigMenu()">
+        Configuration
+      </button>
+      <div class="configmenu hidden">
+        <input type="range" min="1" max="86400" class="slider" />
+      </div>
+    </div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>

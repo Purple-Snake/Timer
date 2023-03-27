@@ -1,0 +1,58 @@
+:root{
+    --midnight-green: #114954;
+    --spring-green: #2BD47A;
+    --chetwode-green: #E9F4E9;
+}
+
+body {
+    background-color: var(--midnight-green);
+}
+
+.arrow-up, .arrow-down{
+    height: 2rem;
+}
+
+.arrow-button {
+    height: 3rem;
+}
+
+button {
+    background-color: var(--spring-green);
+    border-color: var(--spring-green);
+    border-radius: 35px;
+    width: 10rem;
+    height: 5rem;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.timer {
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--chetwode-green);
+}
+
+.time {
+    font-size: 7rem;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--chetwode-green);
+}
+
+.slider {
+    width: 90%;
+    height: 5rem;
+}
+
+button {
+    margin-bottom: 1rem;
+}
+
